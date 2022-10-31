@@ -22,11 +22,6 @@ ol, ul {
   list-style: none;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .link-without-decoration{
     text-decoration: none;
 }
@@ -48,10 +43,12 @@ img {
 .header-list{
     display: flex;
     flex-direction: row;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 50px;
     text-align: center;
+    justify-content: center;
     text-transform: uppercase;
+    color: #000000;
 }
 
 .reg, .cont, .abus{
@@ -82,15 +79,16 @@ img {
 
 .title-of-contacts{
     font-size: 64px;
-    line-height: 115px;
+    line-height: 77px;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 153px;
+    color: #FFFFFF;
+    margin-bottom: 74px;
 }
 
 .text-of-contacts{
-    font-size: 64px;
-    line-height: 77px;
+    font-size: 48px;
+    line-height: 58px;
     width: 320px;
 }
 
@@ -103,9 +101,12 @@ img {
 }
 
 .links-for-contacts{
-    font-size: 48px;
-    line-height: 77px;
-    height: 204px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 40px;
+    line-height: 48px;
+    height: 145px;
 }
 
 .link-to-contact{
@@ -120,7 +121,7 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 386px;
+    width: 576px;
     height: 58px;
 }
 
@@ -130,4 +131,193 @@ img {
     justify-content: space-between;
     font-size: 32px;
     line-height: 58px;  
+}
+
+.carousel-container{
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide{
+    position: relative;
+    display: flex;
+}
+
+.photo-for-sliderTOP{
+    width: 100vw;
+}
+
+#nextBtn:hover{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 2%;
+    font-size: 30px;
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 2%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#prevBtn:hover{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 2%;
+    font-size: 30px;
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 2%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.rect-info{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 558px;
+    height: 249px;
+    padding-bottom: 64px;
+    background: rgba(0, 52, 68, 0.7);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.title-of-info{
+    margin-top: 40px;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 70px;
+}
+
+.date-of-auction{
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.see-more-first {
+    color: #E4AB16;
+}
+
+.first-rect{
+    margin-left: 55%;
+}
+.second-rect{
+    margin-left: 35%;
+}
+
+.third-rect{
+    margin-left: 9%;
+}
+
+.pantere{
+    padding: 46px 82px 84px 82px;
+}
+
+.blue-slash{
+    color: #00AFAF;
+}
+
+.title-of-pantere{
+    width: 50%;
+}
+
+.container-for-pantere{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    margin-top: 66px;
+    margin-left: 70px;
+    border-top: 2px solid #000000;
+    padding-top: 37px;
+}
+
+.frame722-01{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 331px;
+    height: 440px;
+    background: #FFFFFF;
+    border: 4px solid rgba(24, 51, 90, 0.13);
+    box-shadow: 13px 11px 17px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;    
+}
+
+.img-frame722-01{
+    border-radius: 30px;
+}
+
+.number-of-jewerly{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+}
+
+.description-of-jewerly{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.imageOfUs{
+    display: flex;
+    width: 100%;
+}
+
+.textOfHead{
+    position: absolute;
+    top: 130px;
+    font-size: 48px;
+    line-height: 115px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #000000;
+    text-transform: uppercase;
+    margin-left: 24px;
+}
+
+.text-about-us{
+    margin: 120px 116px;
+    font-size: 36px;
+    line-height: 43px;
+    color: #000000;
 }
