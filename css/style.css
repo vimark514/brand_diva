@@ -26,10 +26,7 @@ ol, ul {
     text-decoration: none;
 }
 
-.black-text{
-    color: #000;
-}
-
+/* header */
 .header{
     display: flex;
     flex-direction: row;
@@ -56,18 +53,272 @@ ol, ul {
     height: 50px;
     border-right: 2px solid #000;
 }
-
 .reg{
     width: 247px;
 }
 .cont{
     width: 190px;
+    cursor: pointer;
 }
 .abus{
     width: 200px;
     border-right: none;
 }
 
+.black-text{
+    color: #000;
+}
+
+/* main */
+/*top slider*/
+.carousel-container{
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide{
+    position: relative;
+    display: flex;
+}
+
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 2%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#nextBtn:hover{
+    opacity: 1;
+}
+
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 2%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#prevBtn:hover{
+    opacity: 1;
+}
+
+.photo-for-sliderTOP{
+    width: 100vw;
+}
+
+.rect-info{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 558px;
+    height: 249px;
+    padding-bottom: 64px;
+    background: rgba(0, 52, 68, 0.7);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.title-of-info{
+    margin-top: 40px;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 70px;
+}
+
+.date-of-auction{
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.see-more-first {
+    color: #E4AB16;
+    cursor: pointer;
+}
+
+.first-rect{
+    margin-left: 55%;
+}
+.second-rect{
+    margin-left: 35%;
+}
+.third-rect{
+    margin-left: 9%;
+}
+
+/* colections */
+.frame-for-collection{
+    padding: 46px 82px 84px 82px;
+}
+
+.title-of-colection{
+    width: 50%;
+}
+
+.blue-slash{
+    color: #00AFAF;
+}
+
+.container-for-colection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 450px;
+    margin-top: 50px;
+    margin-left: 70px;
+    border-top: 2px solid #000000;
+    padding-top: 45px;
+}
+
+/* 722 coliction */
+.frame722{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    background: #FFFFFF;
+    border: 4px solid rgba(24, 51, 90, 0.13);
+    box-shadow: 13px 11px 17px rgba(52, 52, 52, 0.25);
+    border-radius: 30px;    
+}
+
+.frame722:hover, .frame723:hover{
+    box-shadow: 15px 13px 19px rgba(0, 0, 0, 0.25);
+    border: 4px solid rgba(74, 114, 170, 0.541);
+    margin-top: -1%;
+}
+
+.img-frame{
+    border-radius: 30px;
+}
+
+.number-of-jewerly{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+}
+
+.description-of-jewerly{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+/* 723 colection */
+.line-for-juste{
+    border: none;
+    background-color: #000000;
+    height: 2px;
+    width: 90%;
+    margin-top: 60px;
+}
+
+.container-for-juste{
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-for-pages{
+    display: flex;
+    width: 200%;
+    position: relative;
+}
+
+.page{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+.frame723{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    height: 450px;
+    background: #FFFFFF;
+    border: 4px solid rgba(24, 51, 90, 0.13);
+    box-shadow: 13px 11px 17px rgba(52, 52, 52, 0.25);
+    border-radius: 30px; 
+}
+
+#nextBtn-juste{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 47%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#nextBtn-juste:hover{
+    opacity: 1;
+}
+
+#prevBtn-juste{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 47%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#prevBtn-juste:hover{
+    opacity: 1;
+}
+
+.points{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 115px;
+    bottom: 0;
+}
+
+#to-page-two, #to-page-one:hover{
+    cursor: pointer;
+}
+
+.p-one{
+    left: 23%;
+}
+
+.p-two{
+    left: 73%;
+}
+
+/* 724 colection */
+.santos{
+    padding: 45px 100px;
+    margin-bottom: 80px;
+}
+
+/* fotter */
 .footer{
     display: block;
     flex-direction: column;
@@ -133,171 +384,71 @@ ol, ul {
     line-height: 58px;  
 }
 
-.carousel-container{
-    width: auto;
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-slide{
-    position: relative;
-    display: flex;
-}
-
-.photo-for-sliderTOP{
-    width: 100vw;
-}
-
-#nextBtn:hover{
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    right: 2%;
-    font-size: 30px;
-    color: white;
-    opacity: 1;
-    cursor: pointer;
-}
-
-#nextBtn{
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    right: 2%;
-    font-size: 30px;
-    color: white;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-#prevBtn:hover{
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    left: 2%;
-    font-size: 30px;
-    color: white;
-    opacity: 1;
-    cursor: pointer;
-}
-
-#prevBtn{
-    position: absolute;
-    top: 50%;
-    z-index: 10;
-    left: 2%;
-    font-size: 30px;
-    color: white;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.rect-info{
-    position: absolute;
-    display: flex;
-    top: 50%;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 558px;
-    height: 249px;
-    padding-bottom: 64px;
-    background: rgba(0, 52, 68, 0.7);
-    color: #FFFFFF;
-    text-align: center;
-}
-
-.title-of-info{
-    margin-top: 40px;
+/* 722-01 */
+.way-to-page{
+    font-weight: 200;
     font-size: 32px;
     line-height: 38px;
-    margin-bottom: 70px;
-}
-
-.date-of-auction{
-    font-size: 32px;
-    line-height: 38px;
-}
-
-.see-more-first {
-    color: #E4AB16;
-}
-
-.first-rect{
-    margin-left: 55%;
-}
-.second-rect{
-    margin-left: 35%;
-}
-
-.third-rect{
-    margin-left: 9%;
-}
-
-.pantere{
-    padding: 46px 82px 84px 82px;
-}
-
-.blue-slash{
-    color: #00AFAF;
-}
-
-.title-of-pantere{
-    width: 50%;
-}
-
-.container-for-pantere{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 90%;
-    margin-top: 66px;
-    margin-left: 70px;
-    border-top: 2px solid #000000;
-    padding-top: 37px;
-}
-
-.frame722-01{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 331px;
-    height: 440px;
-    background: #FFFFFF;
-    border: 4px solid rgba(24, 51, 90, 0.13);
-    box-shadow: 13px 11px 17px rgba(0, 0, 0, 0.25);
-    border-radius: 30px;    
-}
-
-.img-frame722-01{
-    border-radius: 30px;
-}
-
-.number-of-jewerly{
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    font-feature-settings: 'kern' off;
     color: #000000;
 }
 
-.description-of-jewerly{
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #2C2C2C;
+.main722{
+    padding: 40px 57px;
+}
+
+.frame-photos{
+    margin-top: 30px;
+    margin-left: 53px;
+    width: 60%;
+}
+
+.photo1{
+    width: 90%;
+}
+
+.photo2{
+    width: 44.6%;
+}
+
+.photos-and-sidebar{
+    display: flex;
+    flex-direction: row;
+}
+
+.sidebar{
+    width: 688px;
+    margin-top: -40px;
+    padding-left: 30px;
+    text-align: left;
+    position:fixed;
+    right: 0;
 }
 
 
+.title-of-jewerly-on-their-page{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+
+.materials, .description-of-jewerly-on-page, .starting-price{
+    font-size: 32px;
+    line-height: 38px;
+    text-transform: capitalize;
+    margin-bottom: 73px;
+    text-align: left;
+}
+
+.materials{
+    margin-top: 37px;
+}
 
 
-
-
-
-
-
-
-
-
+/* page about us */
 .imageOfUs{
     display: flex;
     width: 100%;
