@@ -1,0 +1,246 @@
+.carousel-container{
+    width: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide{
+    position: relative;
+    display: flex;
+}
+
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 2%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#nextBtn:hover{
+    opacity: 1;
+}
+
+#prevBtn{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 2%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#prevBtn:hover{
+    opacity: 1;
+}
+
+.photo-for-sliderTOP{
+    width: 100vw;
+}
+
+.rect-info{
+    position: absolute;
+    display: flex;
+    top: 50%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 558px;
+    height: 249px;
+    padding-bottom: 64px;
+    background: rgba(0, 52, 68, 0.7);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.title-of-info{
+    margin-top: 40px;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 70px;
+}
+
+.date-of-auction{
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.see-more-first {
+    color: #E4AB16;
+    cursor: pointer;
+}
+
+.first-rect{
+    margin-left: 55%;
+}
+.second-rect{
+    margin-left: 35%;
+}
+.third-rect{
+    margin-left: 9%;
+}
+
+/* colections */
+.frame-for-collection{
+    padding: 46px 82px 84px 82px;
+}
+
+.title-of-colection{
+    width: 50%;
+}
+
+.blue-slash{
+    color: #00AFAF;
+}
+
+.container-for-colection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 90%;
+    height: 450px;
+    margin-top: 50px;
+    margin-left: 70px;
+    border-top: 2px solid #000000;
+    padding-top: 45px;
+}
+
+/* 722 coliction */
+.frame722{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    background: #FFFFFF;
+    border: 4px solid rgba(24, 51, 90, 0.13);
+    box-shadow: 13px 11px 17px rgba(52, 52, 52, 0.25);
+    border-radius: 30px;    
+}
+
+.frame722:hover, .frame723:hover{
+    box-shadow: 15px 13px 19px rgba(0, 0, 0, 0.25);
+    border: 4px solid rgba(74, 114, 170, 0.541);
+    margin-top: -1%;
+}
+
+.img-frame{
+    border-radius: 30px;
+}
+
+.number-of-jewerly{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+    color: #000000;
+}
+
+.description-of-jewerly{
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2C2C2C;
+}
+
+/* 723 colection */
+.line-for-juste{
+    border: none;
+    background-color: #000000;
+    height: 2px;
+    width: 90%;
+    margin-top: 60px;
+}
+
+.container-for-juste{
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-for-pages{
+    display: flex;
+    width: 200%;
+    position: relative;
+}
+
+.page{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 200px;
+}
+
+.frame723{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 350px;
+    height: 450px;
+    background: #FFFFFF;
+    border: 4px solid rgba(24, 51, 90, 0.13);
+    box-shadow: 13px 11px 17px rgba(52, 52, 52, 0.25);
+    border-radius: 30px; 
+}
+
+#nextBtn-juste{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: 47%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#nextBtn-juste:hover{
+    opacity: 1;
+}
+
+#prevBtn-juste{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    right: 47%;
+    font-size: 30px;
+    color: white;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+#prevBtn-juste:hover{
+    opacity: 1;
+}
+
+.points{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    width: 115px;
+    bottom: 0;
+}
+
+#to-page-two, #to-page-one:hover{
+    cursor: pointer;
+}
+
+.p-one{
+    left: 23%;
+}
+
+.p-two{
+    left: 73%;
+}
+
+/* 724 colection */
+.santos{
+    padding: 45px 100px;
+    margin-bottom: 80px;
+}

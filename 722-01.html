@@ -8,6 +8,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;600;700&display=swap');
     </style>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page-collection.css">
     <title>Brand Diva</title>
 </head>
 <body>
@@ -19,7 +20,7 @@
             <li class="abus"><a href="about.html" class="link-without-decoration black-text">About us</a></li>
         </ul>
     </header>
-    <main class="main722">
+    <main class="main">
         <h4 class="way-to-page"><a href="index.html" class="link-without-decoration way-to-page">Home</a> / №722-01</h4>
         <div class="photos-and-sidebar">
             <div class="frame-photos">
@@ -28,10 +29,18 @@
                 <img src="images/722-01.3.png" alt="" class="photo2">
             </div>
             <sidebar class="sidebar">
-                <p class="title-of-jewerly-on-their-page">PANTHÈRE DE CARTIER NECKLACE</p>
-                <p class="materials">White gold, onyx, emeralds, diamonds</p>
-                <p class="description-of-jewerly-on-page">Panthère de Cartier necklace, 18K white gold (750/1000), set with 4 emerald eyes, 2 onyx noses and 4,038 brilliant-cut diamonds totaling 18.70 carats</p>
-                <p class="starting-price">starting price - 112500$</p>
+                <div class="sticky-sidebar">
+                    <p class="title-of-jewerly-on-their-page">PANTHÈRE DE CARTIER NECKLACE</p>
+                    <p class="materials">White gold, onyx, emeralds, diamonds</p>
+                    <p class="description-of-jewerly-on-page">Panthère de Cartier necklace, 18K white gold (750/1000), set with 4 emerald eyes, 2 onyx noses and 4,038 brilliant-cut diamonds totaling 18.70 carats</p>
+                    <div class="share-with-starting-price">
+                        <p class="starting-price">starting price - 112500$</p>
+                        <div class="tooltip">
+                              <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                              <img src="images/share.png" alt="" onclick="myFunction()" onmouseout="outFunc()" class="tooltip icon-share">
+                        </div>
+                    </div>
+                </div>
             </sidebar>
         </div>
     </main>
