@@ -37,7 +37,7 @@
 }
 
 .sidebar{
-    width: 50%;
+    width: 800px;
     margin-left: 6%;
 }
 
@@ -57,7 +57,7 @@
 }
 
 .materials, .description-of-jewerly-on-page, .starting-price{
-    font-size: 28px;
+    font-size: 26px;
     line-height: 38px;
     text-transform: capitalize;
     margin-bottom: 70px;
