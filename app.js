@@ -106,8 +106,8 @@ const first_sm = document.querySelectorAll(".carousel-slide span");
 const contacts = document.querySelector(".cont");
 const main = document.querySelector(".main").clientHeight;
 const first_height = main/4;
-const second_height = first_height + main/3;
-const third_height = second_height + main/3;
+const second_height = first_height + main/4;
+const third_height = second_height + main/4;
 const cont_height = main * 2;
 
 contacts.addEventListener('click', () =>{
