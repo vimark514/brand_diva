@@ -43,25 +43,31 @@ const nextBtn = document.querySelector('#nextBtn');
 
 let counter = 0;
 const size = carouselImage[0].clientWidth;
+let x = 0;
 
 carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
 
 
 function nextPage(){
-    if(carouselImage[counter].id === 'firstClone'){
-        carouselSlide.style.transition = '0.5s ease';
-        counter = carouselImage.length - counter -1;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
-    } else {
-        carouselSlide.style.transition = '0.5s ease';
-        counter++;
-        carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+    x = 1;
+    if(counter < carouselImage.length){
+        if(carouselImage[counter].id === 'firstClone'){
+            carouselSlide.style.transition = '0.5s ease';
+            counter = 0;
+            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        } else {
+            carouselSlide.style.transition = '0.5s ease';
+            counter++;
+            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        }
     }
 }
 
 function prevPage(){
+    x = 1;
     if(carouselImage[counter].id === 'lastClone'){
         carouselSlide.style.transition = '0.5s ease';
+        counter = carouselImage.length - 1;
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     } else {
         carouselSlide.style.transition = '0.5s ease';
@@ -69,6 +75,26 @@ function prevPage(){
         carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
     }
 }
+
+const carouselItems = document.querySelectorAll(".carousel_item");
+
+setInterval(()=> {
+    if(x === 0){
+        if(carouselImage[counter].id === 'firstClone'){
+            carouselSlide.style.transition = '0.5s ease';
+            counter = 0;
+            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        } else {
+            carouselSlide.style.transition = '0.5s ease';
+            counter++;
+            carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)';
+        }
+    }
+    else {
+        setTimeout(1000);
+        x = 0;
+    }
+}, 3000)
 
 const carouselPage = document.querySelector('.carousel-for-pages');
 const carouselNav = document.querySelectorAll('.carousel-for-pages nav');
@@ -102,17 +128,28 @@ radio_two.addEventListener('click', () =>{
     carouselPage.style.transform = 'translateX(' + (-size_juste * 0) + 'px)';
 });
 
-const first_sm = document.querySelectorAll(".carousel-slide span");
+function getOffset(el) {
+    const rect = el.getBoundingClientRect();
+    return {
+      left: rect.left + window.scrollX,
+      top: rect.top + window.scrollY
+    };
+  }
+
+const first_sm = document.querySelectorAll(".see-more-first");
+const container = document.querySelectorAll(".container-for-colection");
+const container2 = document.querySelector(".container-for-juste");
 const contacts = document.querySelector(".cont");
 const main = document.querySelector(".main").clientHeight;
-const first_height = main/4;
-const second_height = first_height + main/4;
-const third_height = second_height + main/4;
+
+const first_height = getOffset(container[0]).top / 1.2;
+const second_height = getOffset(container[0]).top / 0.6;
+const third_height = getOffset(container[0]).top / 0.4;
 const cont_height = main * 2;
 
 contacts.addEventListener('click', () =>{
     window.scrollBy({
-        top: cont_height,
+        top: main,
         behavior: 'smooth'
       });
 });
