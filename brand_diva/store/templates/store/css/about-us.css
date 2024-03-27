@@ -1,0 +1,23 @@
+.imageOfUs{
+    display: flex;
+    width: 100%;
+}
+
+.textOfHead{
+    position: absolute;
+    top: 130px;
+    font-size: 48px;
+    line-height: 115px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #000000;
+    text-transform: uppercase;
+    margin-left: 24px;
+}
+
+.text-about-us{
+    margin: 120px 116px;
+    font-size: 32px;
+    line-height: 43px;
+    color: #000000;
+}
