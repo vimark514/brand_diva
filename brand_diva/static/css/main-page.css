@@ -109,6 +109,29 @@
     padding-top: 45px;
 }
 
+.unSub, .sub{
+    width: 100%;
+    height: 100%;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.sub{
+    display: none;
+}
+
+.container-decription-heart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.like{
+    float: left;
+    width: 10%;
+    margin-left: 10%;
+}
+
 /* 722 coliction */
 .frame722{
     display: flex;
@@ -143,8 +166,10 @@
 .description-of-jewerly{
     font-size: 20px;
     line-height: 24px;
-    text-align: center;
+    text-align: left;
+    margin-left: 3%;
     color: #2C2C2C;
+    float: left;
 }
 
 /* 723 colection */

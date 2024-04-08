@@ -14,15 +14,14 @@
     <title>Brand Diva</title>
 </head>
 <body>
-    
     <i onclick="topFunction()" id="up-top" title="Go to top"><img src="{% static 'images/arrow-up.png' %}" alt=""></i>
     <header class="header">
-        <a href="index.html"><img src="{% static '/images/Brand_Diva.png' %}" alt="Brand Diva logo" class="logo"></a>
+        <a href="{% url 'store' %}"><img src="{% static 'images/Brand_Diva.png' %}" alt="Brand Diva logo"></a>
         <ul class="header-list">
             <li class="cont">Contacts</li>
-            <li class="abus"><a href="template/about.html" class="link-without-decoration black-text">About us</a></li>
+            <li class="abus"><a href="{% url 'about_us' %}" class="link-without-decoration black-text">About us</a></li>
             <li class="prof"><a href="login.html" class="link-without-decoration black-text">My Profile</a></li>
-            
+            <li class="prof"><a href="{% url 'cart' %}" class="link-without-decoration black-text"><img src="{% static 'images/shopping-cart.png' %}" alt="cart"></a></li>
         </ul>
     </header>
    

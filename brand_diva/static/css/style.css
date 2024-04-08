@@ -150,7 +150,7 @@ ol, ul {
     text-transform: uppercase;
 }
 
-.reg, .cont, .abus, .prof{
+.reg, .cont, .abus, .prof, .cart{
     margin-top: 18px;
     height: 50px;
     border-right: 2px solid #000;
@@ -167,6 +167,9 @@ ol, ul {
 }
 .prof{
     width: 200px;
+}
+.cart{
+    width: 100px;
     border-right: none;
 }
 
