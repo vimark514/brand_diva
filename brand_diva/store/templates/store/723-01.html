@@ -1,0 +1,64 @@
+{% extends 'store/main.html' %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;600;700&display=swap');
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page-collection.css">
+    <title>Brand Diva</title>
+</head>
+<body>
+    {% block content %}
+    <main class="main">
+        <h4 class="way-to-page"><a href="index.html" class="link-without-decoration way-to-page">Home</a> / №<span id="number-collection">723-01</span></h4>
+        <div class="photos-and-sidebar">
+            <div class="frame-photos">
+                <img src="images/723/723-01.1.png" alt="" class="photo1">
+                <img src="images/723/723-01.2.png" alt="" class="photo2">
+                <img src="images/723/723-01.3.png" alt="" class="photo2">
+            </div>
+            <sidebar class="sidebar">
+                <div class="sticky-sidebar">
+                    <p class="title-of-jewerly-on-their-page">JUSTE UN CLOU BRACELET</p>
+                    <p class="materials">Yellow gold, diamonds</p>
+                    <p class="description-of-jewerly-on-page">Juste un Clou bracelet, classic, 18K yellow gold (750/1000), set with 374 brilliant-cut diamonds totaling 2.26 carats. Width: 3.5 mm (for size 17)</p>
+                    <div class="share-with-starting-price">
+                        <p class="starting-price">starting price - 14895$</p>
+                        <div class="tooltip">
+                              <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+                              <img src="images/share.png" alt="" onclick="myFunction()" onmouseout="outFunc()" class="tooltip icon-share">
+                        </div>
+                    </div>
+                </div>
+            </sidebar>
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="title-of-contacts">Contacts</p>
+        <div class="contacts">
+            <p class="text-of-contacts">Have some questions?</p>
+            <div class="links-for-contacts">
+                <p><span class="red-slash">\</span><a href="mailto:diva1853@gmail.com" class="link-to-contact link-without-decoration">diva1853@gmail.com</a></p>
+                <p><span class="red-slash">\</span><a href="tel:+380972374283" class="link-to-contact link-without-decoration">+38(097)23-74-283</a></p>
+            </div>
+        </div>
+        <div class="socials-wrapper">
+            <p>(c) 2024 Goossens Santes - Desinged by Vimark</p>
+            <div class="socials">
+                <a href="https://www.instagram.com/sothebys/?hl=en " ><img src="{% static 'images/instagram.png' %}" alt="instagram" class="socials-photo"></a>
+                <a href="https://twitter.com/Sothebys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="{% static 'images/twitter.png' %}" alt="twitter" class="socials-photo"></a>
+                <a href="https://www.youtube.com/channel/UCelkSnSbxvIfjjD01uPHHbg"><img src="{% static 'images/youtube.png' %}" alt="youtube" class="socials-photo"></a>
+                <a href="https://www.facebook.com/sothebys/"><img src="{% static 'images/facebook.png' %}" alt="facebook" class="socials-photo"></a>
+            </div>
+        </div>
+    </footer>
+    {% endblock content %}
+</body>
+<script src="page.js"></script>
+</html>
