@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,14 +8,14 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;700&display=swap');
     </style>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main-page.css">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/main-page.css' %}">
     <title>Brand Diva</title>
 </head>
 <body>
     <i onclick="topFunction()" id="up-top" title="Go to top"><img src="images/arrow-up.png" alt=""></i>
     <header class="header">
-        <a href="index.html"><img src="images/Brand_Diva.png" alt="Brand Diva logo"></a>
+        <a href="index.html"><img src="{% static 'images/Brand_Diva.png' %}" alt="Brand Diva logo"></a>
         <ul class="header-list">
             <li class="cont">Contacts</li>
             <li class="abus"><a href="about.html" class="link-without-decoration black-text">About us</a></li>
@@ -23,7 +24,7 @@
     </header>
     <main class="main">
         <div class="carousel-container">
-            <i class="fas arrow-left" id="prevBtn" onclick="prevPage()"><img src="images/arrow left-hovered.png" alt="" class="img-top" ></i>
+            <i class="fas arrow-left" id="prevBtn" onclick="prevPage()"><img src="{% static 'images/arrow left-hovered.png' %}" alt="" class="img-top" ></i>
             <i class="fas arrow-right" id="nextBtn" onclick="nextPage()"><img src="images/arrow right-hovered.png" alt=""></i>
             <div class="carousel-slide">
                 <div id="lastClone" class="carousel_item">
