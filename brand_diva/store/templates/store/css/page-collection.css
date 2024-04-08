@@ -1,0 +1,121 @@
+.way-to-page{
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: 0.27em;
+    text-transform: uppercase;
+    font-feature-settings: 'kern' off;
+    color: #000000;
+}
+
+.main{
+    padding: 40px 57px;
+}
+
+.frame-photos{
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 60%;
+}
+
+.photo1{
+    width: 90%;
+    border: 2px solid #aca74655;
+    box-shadow: 10px 8px 14px rgba(52, 52, 52, 0.141);
+}
+
+.photo2{
+    width: 44.8%;
+    border: 2px solid #aca74655;
+    box-shadow: 10px 8px 14px rgba(52, 52, 52, 0.141);
+}
+
+.photos-and-sidebar{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 70px;
+}
+
+.sidebar{
+    width: 800px;
+    margin-left: 6%;
+}
+
+.sticky-sidebar{
+    position: sticky;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.title-of-jewerly-on-their-page{
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+}
+
+.materials, .description-of-jewerly-on-page, .starting-price{
+    font-size: 26px;
+    line-height: 38px;
+    text-transform: capitalize;
+    margin-bottom: 70px;
+    text-align: left;
+}
+
+.materials{
+    margin-top: 37px;
+}
+
+.starting-price{
+    margin-bottom: -70px;
+}
+
+.share-with-starting-price{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.icon-share{
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    height: 1%;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: rgba(10, 57, 98, 0.289);
+    text-align: center;
+    padding: 5px;
+    position: absolute;
+    top: 150%;
+    left: 70%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 5px;
+  }
+  
+.tooltip .tooltiptext::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(66, 65, 65) transparent transparent transparent;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
