@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;700&display=swap');
     </style>
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="stylesheet" href="{% static 'css/main-page.css' %}">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main-page.css">
     <title>Brand Diva</title>
 </head>
 <body>
     <i onclick="topFunction()" id="up-top" title="Go to top"><img src="images/arrow-up.png" alt=""></i>
     <header class="header">
-        <a href="index.html"><img src="{% static 'images/Brand_Diva.png' %}" alt="Brand Diva logo"></a>
+        <a href="index.html"><img src="images/Brand_Diva.png" alt="Brand Diva logo"></a>
         <ul class="header-list">
             <li class="cont">Contacts</li>
             <li class="abus"><a href="about.html" class="link-without-decoration black-text">About us</a></li>
@@ -24,11 +24,11 @@
     </header>
     <main class="main">
         <div class="carousel-container">
-            <i class="fas arrow-left" id="prevBtn" onclick="prevPage()"><img src="{% static 'images/arrow left-hovered.png' %}" alt="" class="img-top" ></i>
+            <i class="fas arrow-left" id="prevBtn" onclick="prevPage()"><img src="images/arrow left-hovered.png" alt="" class="img-top" ></i>
             <i class="fas arrow-right" id="nextBtn" onclick="nextPage()"><img src="images/arrow right-hovered.png" alt=""></i>
             <div class="carousel-slide">
                 <div id="lastClone" class="carousel_item">
-                    <img src="images/first-photo-for-slider.png" alt="" class="photo-for-sliderTOP">
+                    <img src="static/images/first-photo-for-slider.png" alt="" class="photo-for-sliderTOP">
                     <nav class="rect-info first-rect">
                         <h1 class="title-of-info">PANTHÈRE DE CARTIER: THE EMBLEM OF THE MAISON</h1>
                         <p class="date-of-auction">1 - 9 october | <span class="see-more-first">See more</span></p>
@@ -36,7 +36,7 @@
                 </div>
                 
                 <div id="middleClone" class="carousel_item">
-                    <img src="images/third-photo-for-slider.png" alt="" class="photo-for-sliderTOP"> 
+                    <img src="static/images/third-photo-for-slider.png" alt="" class="photo-for-sliderTOP"> 
                     <nav class="rect-info third-rect">
                         <h1 class="title-of-info">JUSTE UN CLOU</h1>
                         <p class="date-of-auction">11 - 19 october | <span class="see-more-first">See more</span></p>
@@ -44,7 +44,7 @@
                 </div>
 
                 <div id="firstClone" class="carousel_item">
-                    <img src="images/second-photo-for-slider.png" alt="" class="photo-for-sliderTOP">
+                    <img src="static/images/second-photo-for-slider.png" alt="" class="photo-for-sliderTOP">
                     <nav class="rect-info second-rect">
                         <h1 class="title-of-info">SANTOS DE CARTIER</h1>
                         <p class="date-of-auction">21 - 29 october | <span class="see-more-first">See more</span></p>
@@ -57,7 +57,7 @@
             <div class="container-for-colection">
                 <a href="722-01.html" class="link-without-decoration">
                     <div class="frame722">
-                        <img src="images/722/722-01.png" alt="" class="img-frame">
+                        <img src="static/images/722/722-01.png" alt="" class="img-frame">
                         <h2 class="number-of-jewerly">№722-01</h2>
                         <p class="description-of-jewerly">NECKLACE</p>
                         <p class="description-of-jewerly">starting price - 112500$</p>
@@ -66,7 +66,7 @@
 
                 <a href="722-02.html" class="link-without-decoration">
                     <div class="frame722">
-                        <img src="images/722/722-02.png" alt="" class="img-frame">
+                        <img src="static/images/722/722-02.png" alt="" class="img-frame">
                         <h2 class="number-of-jewerly">№722-02</h2>
                         <p class="description-of-jewerly">BRACELET</p>
                         <p class="description-of-jewerly">starting price - 5700$</p>
@@ -75,7 +75,7 @@
 
                 <a href="722-03.html" class="link-without-decoration">
                     <div class="frame722">
-                        <img src="images/722/722-03.png" alt="" class="img-frame">
+                        <img src="static/images/722/722-03.png" alt="" class="img-frame">
                         <h2 class="number-of-jewerly">№722-03</h2>
                         <p class="description-of-jewerly">RING</p>
                         <p class="description-of-jewerly">starting price - 14895$</p>
@@ -92,7 +92,7 @@
                     <nav class="page" id="first-page">
                         <a href="723-01.html" class="link-without-decoration">
                             <div class="frame723">
-                                <img src="images/723/723-01.png" alt="" class="img-frame">
+                                <img src="static/images/723/723-01.png" alt="" class="img-frame">
                                 <h2 class="number-of-jewerly">№723-01</h2>
                                 <p class="description-of-jewerly">BRACELET</p>
                                 <p class="description-of-jewerly">starting price - 6500$</p>
@@ -100,23 +100,23 @@
                         </a>
                         <a href="723-02.html" class="link-without-decoration">
                             <div class="frame723">
-                                <img src="images/723/723-02.png" alt="" class="img-frame">
+                                <img src="static/images/723/723-02.png" alt="" class="img-frame">
                                 <h2 class="number-of-jewerly">№723-02</h2>
                                 <p class="description-of-jewerly">RING</p>
                                 <p class="description-of-jewerly">starting price - 12200$</p>
                             </div>
                         </a>
                         <div class="points p-one">
-                            <img src="images/Subtract.png" alt="">
-                            <img src="images/Ellipse 2.png" alt="" id="to-page-two"> 
+                            <img src="static/images/Subtract.png" alt="">
+                            <img src="static/images/Ellipse 2.png" alt="" id="to-page-two"> 
                         </div>
-                        <i class="fas arrow-right" id="nextBtn-juste"><img src="images/arrow right-hovered.png" alt=""></i>
+                        <i class="fas arrow-right" id="nextBtn-juste"><img src="static/images/arrow right-hovered.png" alt=""></i>
                     </nav>
                     <nav class="page" id="second-page">
-                        <i class="fas arrow-left" id="prevBtn-juste"><img src="images/arrow left-hovered.png" alt=""></i>
+                        <i class="fas arrow-left" id="prevBtn-juste"><img src="static/images/arrow left-hovered.png" alt=""></i>
                         <a href="723-03.html" class="link-without-decoration">
                             <div class="frame723">
-                                <img src="images/723/723-03.png" alt="" class="img-frame">
+                                <img src="static/images/723/723-03.png" alt="" class="img-frame">
                                 <h2 class="number-of-jewerly">№723-03</h2>
                                 <p class="description-of-jewerly">EARRINGS</p>
                                 <p class="description-of-jewerly">starting price - 16400$</p>
@@ -124,15 +124,15 @@
                         </a>
                         <a href="723-04.html" class="link-without-decoration">
                             <div class="frame723">
-                                <img src="images/723/723-04.png" alt="" class="img-frame">
+                                <img src="static/images/723/723-04.png" alt="" class="img-frame">
                                 <h2 class="number-of-jewerly">№723-04</h2>
                                 <p class="description-of-jewerly">NECKLACE</p>
                                 <p class="description-of-jewerly">starting price - 58200$</p>
                             </div>
                         </a>
                         <div class="points p-two">
-                            <img src="images/Ellipse 2.png" alt="" id="to-page-one"> 
-                            <img src="images/Subtract.png" alt="">
+                            <img src="static/images/Ellipse 2.png" alt="" id="to-page-one"> 
+                            <img src="static/images/Subtract.png" alt="">
                         </div>
                     </nav>
                 </div>
@@ -144,7 +144,7 @@
             <div class="container-for-colection santos">
                 <a href="724-01.html" class="link-without-decoration">
                     <div class="frame723">
-                        <img src="images/724/724-01.png" alt="" class="img-frame">
+                        <img src="static/images/724/724-01.png" alt="" class="img-frame">
                         <h2 class="number-of-jewerly">№724-01</h2>
                         <p class="description-of-jewerly">WATCH</p>
                         <p class="description-of-jewerly">starting price - 62800$</p>
@@ -152,7 +152,7 @@
                 </a>
                 <a href="724-02.html" class="link-without-decoration">
                     <div class="frame723">
-                        <img src="images/724/724-02.png" alt="" class="img-frame">
+                        <img src="static/images/724/724-02.png" alt="" class="img-frame">
                         <h2 class="number-of-jewerly">№724-02</h2>
                         <p class="description-of-jewerly">WATCH</p>
                         <p class="description-of-jewerly">starting price - 59400$</p>
@@ -173,13 +173,15 @@
         <div class="socials-wrapper">
             <p>(c) 2024 Goossens Santes - Desinged by Vimark</p>
             <div class="socials">
-                <a href="https://www.instagram.com/sothebys/?hl=en " ><img src="images/instagram.png" alt="instagram" class="socials-photo"></a>
-                <a href="https://twitter.com/Sothebys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twitter.png" alt="twitter" class="socials-photo"></a>
-                <a href="https://www.youtube.com/channel/UCelkSnSbxvIfjjD01uPHHbg"><img src="images/youtube.png" alt="youtube" class="socials-photo"></a>
-                <a href="https://www.facebook.com/sothebys/"><img src="images/facebook.png" alt="facebook" class="socials-photo"></a>
+                <a href="https://www.instagram.com/sothebys/?hl=en " ><img src="static/images/instagram.png" alt="instagram" class="socials-photo"></a>
+                <a href="https://twitter.com/Sothebys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="static/images/twitter.png" alt="twitter" class="socials-photo"></a>
+                <a href="https://www.youtube.com/channel/UCelkSnSbxvIfjjD01uPHHbg"><img src="static/images/youtube.png" alt="youtube" class="socials-photo"></a>
+                <a href="https://www.facebook.com/sothebys/"><img src="static/images/facebook.png" alt="facebook" class="socials-photo"></a>
             </div>
         </div>
     </footer>
+    {% endblock content %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-<script src="app.js"></script>
+<script src="static/js/app.js"></script>
 </html>

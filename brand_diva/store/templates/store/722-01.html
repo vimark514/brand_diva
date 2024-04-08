@@ -1,3 +1,5 @@
+{% extends 'store/main.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,14 +14,7 @@
     <title>Brand Diva</title>
 </head>
 <body>
-    <header class="header">
-        <a href="index.html"><img src="images/Brand_Diva.png" alt="Brand Diva logo"></a>
-        <ul class="header-list">
-            <li class="cont">Contacts</li>
-            <li class="abus"><a href="about.html" class="link-without-decoration black-text">About us</a></li>
-            <li class="prof"><a href="login.html" class="link-without-decoration black-text">My Profile</a></li>
-        </ul>
-    </header>
+    {% block content %}
     <main class="main">
         
         <h4 class="way-to-page"><a href="index.html" class="link-without-decoration way-to-page">Home</a> / №<span id="number-collection">722-01</span></h4>
@@ -55,15 +50,16 @@
             </div>
         </div>
         <div class="socials-wrapper">
-            <p>(c) 2022 DIVA - Desinged by Vimark</p>
+            <p>(c) 2024 Goossens Santes - Desinged by Vimark</p>
             <div class="socials">
-                <a href="https://www.instagram.com/sothebys/?hl=en " ><img src="images/instagram.png" alt="instagram" class="socials-photo"></a>
-                <a href="https://twitter.com/Sothebys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twitter.png" alt="twitter" class="socials-photo"></a>
-                <a href="https://www.youtube.com/channel/UCelkSnSbxvIfjjD01uPHHbg"><img src="images/youtube.png" alt="youtube" class="socials-photo"></a>
-                <a href="https://www.facebook.com/sothebys/"><img src="images/facebook.png" alt="facebook" class="socials-photo"></a>
+                <a href="https://www.instagram.com/sothebys/?hl=en " ><img src="{% static 'images/instagram.png' %}" alt="instagram" class="socials-photo"></a>
+                <a href="https://twitter.com/Sothebys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="{% static 'images/twitter.png' %}" alt="twitter" class="socials-photo"></a>
+                <a href="https://www.youtube.com/channel/UCelkSnSbxvIfjjD01uPHHbg"><img src="{% static 'images/youtube.png' %}" alt="youtube" class="socials-photo"></a>
+                <a href="https://www.facebook.com/sothebys/"><img src="{% static 'images/facebook.png' %}" alt="facebook" class="socials-photo"></a>
             </div>
         </div>
     </footer>
+    {% endblock content %}
 </body>
 <script src="page.js"></script>
 </html>

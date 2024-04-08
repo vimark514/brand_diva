@@ -1,3 +1,5 @@
+{% extends 'store/main.html' %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,16 +14,9 @@
     <title>About Brand Diva</title>
 </head>
 <body>
-    <header class="header">
-        <a href="index.html"><img src="images/Brand_Diva.png" alt="Brand Diva logo"></a>
-        <ul class="header-list">
-            <li class="cont">Contacts</li>
-            <li class="abus"><a href="about.html" class="link-without-decoration black-text">About us</a></li>
-            <li class="prof"><a href="login.html" class="link-without-decoration black-text">My Profile</a></li>
-        </ul>
-    </header>
+    {% block content %}
     <main class="main">
-        <img src="images/headAboutUs.webp" alt="about us" class="imageOfUs">
+        <img src="{% static 'images/headAboutUs.webp' %}" alt="about us" class="imageOfUs">
         <h3 class="textOfHead">About us</h3>
         <p class="text-about-us">Established in 1853, DIVA is the world’s largest, most trusted and dynamic marketplace for art and luxury. We empower our international community of collectors and connoisseurs to discover, acquire, finance and consign fine art and rare objects. Our reputation for trust and authenticity is backed by our unparalleled global network of specialists spanning 40 countries and 44 departments, which include Contemporary Art, Modern and Impressionist Art, Old Masters, Chinese Works of Art, jewelry, watches, wine and spirits, and interiors, among many others. Guided by our forward-thinking spirit of innovation, we host over 600 auctions annually and offer a cross-category selection of items available for immediate purchase via both digital and physical shopping experiences as well as private sales.</p>
     </main>
@@ -35,15 +30,16 @@
             </div>
         </div>
         <div class="socials-wrapper">
-            <p>(c) 2022 DIVA - Desinged by Vimark</p>
+            <p>(c) 2024 Goossens Santes - Desinged by Vimark</p>
             <div class="socials">
-                <a href="https://www.instagram.com/sothebys/?hl=en " ><img src="images/instagram.png" alt="instagram" class="socials-photo"></a>
-                <a href="https://twitter.com/Sothebys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="images/twitter.png" alt="twitter" class="socials-photo"></a>
-                <a href="https://www.youtube.com/channel/UCelkSnSbxvIfjjD01uPHHbg"><img src="images/youtube.png" alt="youtube" class="socials-photo"></a>
-                <a href="https://www.facebook.com/sothebys/"><img src="images/facebook.png" alt="facebook" class="socials-photo"></a>
+                <a href="https://www.instagram.com/sothebys/?hl=en " ><img src="{% static 'images/instagram.png' %}" alt="instagram" class="socials-photo"></a>
+                <a href="https://twitter.com/Sothebys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="{% static 'images/twitter.png' %}" alt="twitter" class="socials-photo"></a>
+                <a href="https://www.youtube.com/channel/UCelkSnSbxvIfjjD01uPHHbg"><img src="{% static 'images/youtube.png' %}" alt="youtube" class="socials-photo"></a>
+                <a href="https://www.facebook.com/sothebys/"><img src="{% static 'images/facebook.png' %}" alt="facebook" class="socials-photo"></a>
             </div>
         </div>
     </footer>
+    {% endblock content %}
 </body>
 <script src="about-us.js"></script>
 </html>

@@ -7,4 +7,12 @@ def store(request):
 
 def cart(request):
     context = {}
-    return render(request, 'store/cart.html', context) 
+    return render(request, 'store/cart.html', context)
+
+def about_us(request):
+    context = {}
+    return render(request, 'store/about.html', context)
+
+def main(request):
+    context = {}
+    return render(request, 'store/main.html', context)
