@@ -19,8 +19,12 @@
         <ul class="header-list">
             <li class="cont">Contacts</li>
             <li class="abus"><a href="{% url 'about_us' %}" class="link-without-decoration black-text">About us</a></li>
-            <li class="prof"><a href="login.html" class="link-without-decoration black-text">My Profile</a></li>
-            <li class="prof"><a href="{% url 'cart' %}" class="link-without-decoration black-text"><img src="{% static 'images/shopping-cart.png' %}" alt="cart"></a></li>
+            <li class="prof"><a href="login.html" class="link-without-decoration black-text">Login</a></li>
+            <li class="prof">
+                <a href="{% url 'cart' %}" class="cart-icon">
+                    <img src="{% static 'images/shopping-cart.png' %}" alt="cart">
+                </a>
+            </li>
         </ul>
     </header>
     <main class="main">
@@ -54,13 +58,8 @@
             </div>
         </div>
         <div class="frame-for-collection" id="frame722">
-            <div class="like">
-                <img src="" alt class="toUnLike" onclick="toLike()" id="toUnLike">
-                <img src="" alt class ="toLike" onclick="toLike()" id="toLike">
-            </div>
             <h1 class="title-of-colection"><span class="blue-slash">\</span> PANTHÈRE DE CARTIER: THE EMBLEM OF THE MAISON</h1>
             <div class="container-for-colection">
-                
                     <div class="frame722">
                         <img src="{% static 'images/722/722-01.png' %}" alt="" class="img-frame">
                         <a href="722-01.html" class="link-without-decoration">
@@ -184,7 +183,7 @@
             </div>
         </div>
         <div class="socials-wrapper">
-            <p>(c) 2024 Goossens Santes - Desinged by Vimark</p>
+            <p>(c) 2024 DIVA - Desinged by Vimark</p>
             <div class="socials">
                 <a href="https://www.instagram.com/sothebys/?hl=en " ><img src="{% static 'images/instagram.png' %}" alt="instagram" class="socials-photo"></a>
                 <a href="https://twitter.com/Sothebys?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="{% static 'images/twitter.png' %}" alt="twitter" class="socials-photo"></a>
